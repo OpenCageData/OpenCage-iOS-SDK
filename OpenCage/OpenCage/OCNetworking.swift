@@ -14,29 +14,28 @@ class OCNetworking: NSObject {
     static let sharedInstance = OCNetworking()
     
     func baseURL() -> String {
-        return "https://vitpa-api.herokuapp.com/"
+        return "https://api.opencagedata.com/geocode/v1/json?key="
     }
     
-    func reverseGeocode(parameters :String, apiKey :String, completionBlock :@escaping AsyncCompletionBlock) {
+    func reverseGeocode(latitude :NSNumber, longitude :NSNumber, withAnnotations :Bool, apiKey :String, completionBlock :@escaping AsyncCompletionBlock) {
+        let latLongString = String(format: "%@+%@", latitude.stringValue, longitude.stringValue)
+        var urlString = String(format: "%@%@&language=en&pretty=1&q=", baseURL(), escapeCharacters(apiKey), escapeCharacters(latLongString))
         
+        if withAnnotations == false {
+            urlString = urlString.appending("&no_annotations=1")
+        }
+        
+        let url :URL = URL(string: urlString)!
+        downloadDataFromURL(url, completionBlock: completionBlock)
     }
     
     func forwardGeocode(parameters :String, apiKey :String, completionBlock :@escaping AsyncCompletionBlock) {
         
     }
     
-    func downloadDataFromURL(_ url: URL, bodyString: NSString, type: String, completionBlock:@escaping AsyncCompletionBlock) {
+    func downloadDataFromURL(_ url: URL, completionBlock:@escaping AsyncCompletionBlock) {
         let request = NSMutableURLRequest(url: url, cachePolicy: NSURLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: 10)
-        if bodyString.length > 0 {
-            request.httpBody = bodyString.data(using: String.Encoding.utf8.rawValue)
-        }
-        
-        if type.isEmpty  {
-            request.httpMethod = "GET"
-        }
-        else {
-            request.httpMethod = type
-        }
+        request.httpMethod = "GET"
         self.downloadDataFromRequest(request as URLRequest, completionBlock: completionBlock)
     }
     
@@ -85,11 +84,11 @@ class OCNetworking: NSObject {
         task.resume()
     }
     
-    func escapeCharacters(_ string :NSString) -> NSString {
+    func escapeCharacters(_ string :String) -> String {
         let customAllowedSet =  CharacterSet(charactersIn:"\"#%/<>?@\\^`{|}+").inverted
         let escapedString = string.addingPercentEncoding(withAllowedCharacters: customAllowedSet)
         
-        return escapedString! as NSString
+        return escapedString! as String
     }
     
 }

@@ -18,17 +18,18 @@ class OCSDK: NSObject {
     
     init(apiKey: String) throws {
         if apiKey.count == 0 {
+            print("[Open Cage SDK] Invalid API Key")
             throw OpenCageError.invalidAPIKey
         }
         
         apiKeyString = apiKey
     }
     
-    public func reverseGeocode() {
+    public func reverseGeocode(latitude :NSNumber, longitude :NSNumber, withAnnotations :Bool, completionBlock :@escaping AsyncCompletionBlock) {
         
     }
     
-    public func forwardGeocode() {
+    public func forwardGeocode(address :String, withAnnotations :Bool, completionBlock :@escaping AsyncCompletionBlock) {
         
     }
 }
