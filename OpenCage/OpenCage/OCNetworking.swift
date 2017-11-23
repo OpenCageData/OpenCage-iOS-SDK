@@ -9,6 +9,8 @@
 import UIKit
 
 typealias AsyncCompletionBlock  = (_ resultDictionary: NSDictionary, _ success: Bool, _ error: NSError?) -> ()
+typealias ReverseGeocoderCompletionBlock  = (_ resultDictionary: NSDictionary, _ success: Bool, _ error: NSError?) -> ()
+typealias ForwardGeocoderCompletionBlock  = (_ resultDictionary: NSDictionary, _ success: Bool, _ error: NSError?) -> ()
 
 class OCNetworking: NSObject {
     static let sharedInstance = OCNetworking()
@@ -17,7 +19,7 @@ class OCNetworking: NSObject {
         return "https://api.opencagedata.com/geocode/v1/json?key="
     }
     
-    func reverseGeocode(latitude :NSNumber, longitude :NSNumber, withAnnotations :Bool, apiKey :String, completionBlock :@escaping AsyncCompletionBlock) {
+    func reverseGeocode(latitude :NSNumber, longitude :NSNumber, withAnnotations :Bool, apiKey :String, completionBlock :@escaping ReverseGeocoderCompletionBlock) {
         let latLongString = String(format: "%@+%@", latitude.stringValue, longitude.stringValue)
         var urlString = String(format: "%@%@&language=en&pretty=1&q=", baseURL(), escapeCharacters(apiKey), escapeCharacters(latLongString))
         
@@ -26,11 +28,22 @@ class OCNetworking: NSObject {
         }
         
         let url :URL = URL(string: urlString)!
-        downloadDataFromURL(url, completionBlock: completionBlock)
+        downloadDataFromURL(url) { (dict, success, error) in
+            
+        }
     }
     
-    func forwardGeocode(parameters :String, apiKey :String, completionBlock :@escaping AsyncCompletionBlock) {
+    func forwardGeocode(address :String, withAnnotations :Bool, apiKey :String, completionBlock :@escaping ForwardGeocoderCompletionBlock) {
+        var urlString = String(format: "%@%@&language=en&pretty=1&q=", baseURL(), escapeCharacters(apiKey), escapeCharacters(address))
         
+        if withAnnotations == false {
+            urlString = urlString.appending("&no_annotations=1")
+        }
+        
+        let url :URL = URL(string: urlString)!
+        downloadDataFromURL(url) { (dict, success, error) in
+            
+        }
     }
     
     func downloadDataFromURL(_ url: URL, completionBlock:@escaping AsyncCompletionBlock) {
@@ -74,7 +87,7 @@ class OCNetworking: NSObject {
                     error = NSError(domain: string, code: 0, userInfo: [:])
                 }
                 else  {
-                    error = NSError(domain: "Something gone wrong", code: 0, userInfo: [:])
+                    error = NSError(domain: "Somethings gone wrong", code: 0, userInfo: [:])
                 }
             }
             

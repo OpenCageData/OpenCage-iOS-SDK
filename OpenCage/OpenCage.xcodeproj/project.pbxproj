@@ -11,6 +11,11 @@
 		D53558E71FC45982009F3E84 /* OpenCageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53558E61FC45982009F3E84 /* OpenCageTests.swift */; };
 		D53558F31FC4599C009F3E84 /* OCNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53558F21FC4599C009F3E84 /* OCNetworking.swift */; };
 		D53558F51FC459A8009F3E84 /* OCSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53558F41FC459A8009F3E84 /* OCSDK.swift */; };
+		D53558FD1FC6A93B009F3E84 /* OCSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53558F41FC459A8009F3E84 /* OCSDK.swift */; };
+		D53558FE1FC6A93E009F3E84 /* OCNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53558F21FC4599C009F3E84 /* OCNetworking.swift */; };
+		D53559001FC6AF7E009F3E84 /* OCAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53558FF1FC6AF7E009F3E84 /* OCAddress.swift */; };
+		D53559021FC6AFB6009F3E84 /* OCAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559011FC6AFB6009F3E84 /* OCAnnotation.swift */; };
+		D53559041FC6B466009F3E84 /* OCLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559031FC6B466009F3E84 /* OCLocation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +36,9 @@
 		D53558E81FC45982009F3E84 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D53558F21FC4599C009F3E84 /* OCNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCNetworking.swift; sourceTree = "<group>"; };
 		D53558F41FC459A8009F3E84 /* OCSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCSDK.swift; sourceTree = "<group>"; };
+		D53558FF1FC6AF7E009F3E84 /* OCAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCAddress.swift; sourceTree = "<group>"; };
+		D53559011FC6AFB6009F3E84 /* OCAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCAnnotation.swift; sourceTree = "<group>"; };
+		D53559031FC6B466009F3E84 /* OCLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCLocation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +83,9 @@
 			children = (
 				D53558F41FC459A8009F3E84 /* OCSDK.swift */,
 				D53558F21FC4599C009F3E84 /* OCNetworking.swift */,
+				D53558FF1FC6AF7E009F3E84 /* OCAddress.swift */,
+				D53559011FC6AFB6009F3E84 /* OCAnnotation.swift */,
+				D53559031FC6B466009F3E84 /* OCLocation.swift */,
 				D53558DC1FC45982009F3E84 /* Info.plist */,
 			);
 			path = OpenCage;
@@ -199,7 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53559001FC6AF7E009F3E84 /* OCAddress.swift in Sources */,
 				D53558F51FC459A8009F3E84 /* OCSDK.swift in Sources */,
+				D53559041FC6B466009F3E84 /* OCLocation.swift in Sources */,
+				D53559021FC6AFB6009F3E84 /* OCAnnotation.swift in Sources */,
 				D53558F31FC4599C009F3E84 /* OCNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +222,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D53558FD1FC6A93B009F3E84 /* OCSDK.swift in Sources */,
+				D53558FE1FC6A93E009F3E84 /* OCNetworking.swift in Sources */,
 				D53558E71FC45982009F3E84 /* OpenCageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

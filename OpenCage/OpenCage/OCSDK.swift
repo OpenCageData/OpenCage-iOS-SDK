@@ -8,28 +8,19 @@
 
 import UIKit
 
-enum OpenCageError: Error {
-    case invalidAPIKey
-}
-
 class OCSDK: NSObject {
     
     private var apiKeyString :String = ""
     
-    init(apiKey: String) throws {
-        if apiKey.count == 0 {
-            print("[Open Cage SDK] Invalid API Key")
-            throw OpenCageError.invalidAPIKey
-        }
-        
+    init(apiKey: String) {
         apiKeyString = apiKey
     }
     
-    public func reverseGeocode(latitude :NSNumber, longitude :NSNumber, withAnnotations :Bool, completionBlock :@escaping AsyncCompletionBlock) {
-        
+    public func reverseGeocode(latitude :NSNumber, longitude :NSNumber, withAnnotations :Bool, completionBlock :@escaping ReverseGeocoderCompletionBlock) {
+        OCNetworking.sharedInstance.reverseGeocode(latitude: latitude, longitude: longitude, withAnnotations: withAnnotations, apiKey: apiKeyString, completionBlock: completionBlock)
     }
     
-    public func forwardGeocode(address :String, withAnnotations :Bool, completionBlock :@escaping AsyncCompletionBlock) {
-        
+    public func forwardGeocode(address :String, withAnnotations :Bool, completionBlock :@escaping ForwardGeocoderCompletionBlock) {
+        OCNetworking.sharedInstance.forwardGeocode(address: address, withAnnotations: withAnnotations, apiKey: apiKeyString, completionBlock: completionBlock)
     }
 }
