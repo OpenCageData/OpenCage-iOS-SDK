@@ -9,8 +9,8 @@
 import UIKit
 
 typealias AsyncCompletionBlock  = (_ resultDictionary: NSDictionary, _ success: Bool, _ error: NSError?) -> ()
-typealias ReverseGeocoderCompletionBlock  = (_ resultDictionary: NSDictionary, _ success: Bool, _ error: NSError?) -> ()
-typealias ForwardGeocoderCompletionBlock  = (_ resultDictionary: NSDictionary, _ success: Bool, _ error: NSError?) -> ()
+typealias ReverseGeocoderCompletionBlock  = (_ addressArray :OCAddressResponse, _ success: Bool, _ error: NSError?) -> ()
+typealias ForwardGeocoderCompletionBlock  = (_ locationArray :OCLocationResponse, _ success: Bool, _ error: NSError?) -> ()
 
 class OCNetworking: NSObject {
     static let sharedInstance = OCNetworking()
@@ -20,8 +20,8 @@ class OCNetworking: NSObject {
     }
     
     func reverseGeocode(latitude :NSNumber, longitude :NSNumber, withAnnotations :Bool, apiKey :String, completionBlock :@escaping ReverseGeocoderCompletionBlock) {
-        let latLongString = String(format: "%@+%@", latitude.stringValue, longitude.stringValue)
-        var urlString = String(format: "%@%@&language=en&pretty=1&q=", baseURL(), escapeCharacters(apiKey), escapeCharacters(latLongString))
+        let latLongString = String(format: "%@,%@", latitude.stringValue, longitude.stringValue)
+        var urlString = String(format: "%@%@&language=en&pretty=1&q=%@", baseURL(), escapeCharacters(apiKey), escapeCharacters(latLongString))
         
         if withAnnotations == false {
             urlString = urlString.appending("&no_annotations=1")
@@ -29,12 +29,29 @@ class OCNetworking: NSObject {
         
         let url :URL = URL(string: urlString)!
         downloadDataFromURL(url) { (dict, success, error) in
+            let ocResponse :OCAddressResponse = OCAddressResponse()
+            var error :NSError? = error
+            var hasSucceeded = success
             
+            if success {
+                ocResponse.setupWithData(dictionary: dict)
+                
+                if let status :NSDictionary = dict.object(forKey: "status") as? NSDictionary {
+                    let code :Int = status.object(forKey: "code") as! Int
+                    let statusMessage :String = status.object(forKey: "message") as! String
+                    if code != 200 {
+                        error = NSError(domain: statusMessage, code: code, userInfo: nil)
+                        hasSucceeded = false
+                    }
+                }
+            }
+            
+            completionBlock(ocResponse, hasSucceeded, error)
         }
     }
     
     func forwardGeocode(address :String, withAnnotations :Bool, apiKey :String, completionBlock :@escaping ForwardGeocoderCompletionBlock) {
-        var urlString = String(format: "%@%@&language=en&pretty=1&q=", baseURL(), escapeCharacters(apiKey), escapeCharacters(address))
+        var urlString = String(format: "%@%@&language=en&pretty=1&q=%@", baseURL(), escapeCharacters(apiKey), escapeCharacters(address))
         
         if withAnnotations == false {
             urlString = urlString.appending("&no_annotations=1")
@@ -42,7 +59,13 @@ class OCNetworking: NSObject {
         
         let url :URL = URL(string: urlString)!
         downloadDataFromURL(url) { (dict, success, error) in
+            let ocResponse :OCLocationResponse = OCLocationResponse()
             
+            if success {
+                ocResponse.setupWithData(dictionary: dict)
+            }
+            
+            completionBlock(ocResponse, success, error)
         }
     }
     

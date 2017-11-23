@@ -19,12 +19,20 @@ class OpenCageTests: XCTestCase {
         super.tearDown()
     }
     
-    func testSettingAPIKey() {
-        
-    }
-    
     func testReverseGeocoderFree() {
+        let expectation = self.expectation(description: "fetch reverse geocode")
         
+        let ocSDK :OCSDK = OCSDK(apiKey: "8d1f8b2d151b48358af5976447717687")
+        ocSDK.reverseGeocode(latitude: NSNumber(value: 51.5159), longitude: NSNumber(value: 0.1297), withAnnotations: true) { (response, success, error) in
+            if success {
+                if response.remainingLimit != nil { // Only Free Accounts have the rate limit
+                    XCTAssert(true, "Pass")
+                    expectation.fulfill()
+                }
+            }
+        }
+        
+        self.waitForExpectations(timeout: 10.0, handler: nil)
     }
     
     func testForwardGeocoderFree() {

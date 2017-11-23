@@ -10,4 +10,8 @@ import UIKit
 
 class OCLocation: NSObject {
 
+    func setupWithData(dictionary :NSDictionary) {
+        
+    }
+    
 }

@@ -16,6 +16,13 @@
 		D53559001FC6AF7E009F3E84 /* OCAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53558FF1FC6AF7E009F3E84 /* OCAddress.swift */; };
 		D53559021FC6AFB6009F3E84 /* OCAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559011FC6AFB6009F3E84 /* OCAnnotation.swift */; };
 		D53559041FC6B466009F3E84 /* OCLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559031FC6B466009F3E84 /* OCLocation.swift */; };
+		D53559061FC73AE9009F3E84 /* OCAddressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559051FC73AE9009F3E84 /* OCAddressResponse.swift */; };
+		D53559081FC73AF4009F3E84 /* OCLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559071FC73AF4009F3E84 /* OCLocationResponse.swift */; };
+		D53559091FC742BD009F3E84 /* OCAddressResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559051FC73AE9009F3E84 /* OCAddressResponse.swift */; };
+		D535590A1FC742BE009F3E84 /* OCAddress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53558FF1FC6AF7E009F3E84 /* OCAddress.swift */; };
+		D535590B1FC742C1009F3E84 /* OCAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559011FC6AFB6009F3E84 /* OCAnnotation.swift */; };
+		D535590C1FC742C3009F3E84 /* OCLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559031FC6B466009F3E84 /* OCLocation.swift */; };
+		D535590D1FC742C5009F3E84 /* OCLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559071FC73AF4009F3E84 /* OCLocationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +46,8 @@
 		D53558FF1FC6AF7E009F3E84 /* OCAddress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCAddress.swift; sourceTree = "<group>"; };
 		D53559011FC6AFB6009F3E84 /* OCAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCAnnotation.swift; sourceTree = "<group>"; };
 		D53559031FC6B466009F3E84 /* OCLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCLocation.swift; sourceTree = "<group>"; };
+		D53559051FC73AE9009F3E84 /* OCAddressResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCAddressResponse.swift; sourceTree = "<group>"; };
+		D53559071FC73AF4009F3E84 /* OCLocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCLocationResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,8 +92,10 @@
 			children = (
 				D53558F41FC459A8009F3E84 /* OCSDK.swift */,
 				D53558F21FC4599C009F3E84 /* OCNetworking.swift */,
+				D53559051FC73AE9009F3E84 /* OCAddressResponse.swift */,
 				D53558FF1FC6AF7E009F3E84 /* OCAddress.swift */,
 				D53559011FC6AFB6009F3E84 /* OCAnnotation.swift */,
+				D53559071FC73AF4009F3E84 /* OCLocationResponse.swift */,
 				D53559031FC6B466009F3E84 /* OCLocation.swift */,
 				D53558DC1FC45982009F3E84 /* Info.plist */,
 			);
@@ -214,7 +225,9 @@
 				D53558F51FC459A8009F3E84 /* OCSDK.swift in Sources */,
 				D53559041FC6B466009F3E84 /* OCLocation.swift in Sources */,
 				D53559021FC6AFB6009F3E84 /* OCAnnotation.swift in Sources */,
+				D53559081FC73AF4009F3E84 /* OCLocationResponse.swift in Sources */,
 				D53558F31FC4599C009F3E84 /* OCNetworking.swift in Sources */,
+				D53559061FC73AE9009F3E84 /* OCAddressResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +236,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53558FD1FC6A93B009F3E84 /* OCSDK.swift in Sources */,
+				D53559091FC742BD009F3E84 /* OCAddressResponse.swift in Sources */,
+				D535590C1FC742C3009F3E84 /* OCLocation.swift in Sources */,
+				D535590B1FC742C1009F3E84 /* OCAnnotation.swift in Sources */,
 				D53558FE1FC6A93E009F3E84 /* OCNetworking.swift in Sources */,
+				D535590D1FC742C5009F3E84 /* OCLocationResponse.swift in Sources */,
 				D53558E71FC45982009F3E84 /* OpenCageTests.swift in Sources */,
+				D535590A1FC742BE009F3E84 /* OCAddress.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
