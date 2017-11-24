@@ -10,6 +10,9 @@ import UIKit
 
 class OCAddress: NSObject {
     
+    var confidence :Int = 0
+    var formattedAddress :String = ""
+    
     
     /*
     "bounds": {
@@ -33,8 +36,6 @@ class OCAddress: NSObject {
         "state": "England",
         "state_district": "Greater London"
     },
-    "confidence": 9,
-    "formatted": "St Andrews Close, London SE28 8NZ, United Kingdom",
     "geometry": {
         "lat": 51.5125159,
         "lng": 0.1298424
@@ -50,6 +51,14 @@ class OCAddress: NSObject {
                 annotation.setupWithData(dictionary: dict)
                 annotations.append(annotation)
             }
+        }
+        
+        if let formattedString :String = dictionary.object(forKey: "formatted") as? String {
+            formattedAddress = formattedString
+        }
+        
+        if let confidenceString :Int = dictionary.object(forKey: "confidence") as? Int {
+            confidence = confidenceString
         }
     }
 }

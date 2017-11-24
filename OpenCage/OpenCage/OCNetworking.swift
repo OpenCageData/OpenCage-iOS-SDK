@@ -12,7 +12,7 @@ typealias AsyncCompletionBlock  = (_ resultDictionary: NSDictionary, _ success: 
 typealias ReverseGeocoderCompletionBlock  = (_ addressArray :OCAddressResponse, _ success: Bool, _ error: NSError?) -> ()
 typealias ForwardGeocoderCompletionBlock  = (_ locationArray :OCLocationResponse, _ success: Bool, _ error: NSError?) -> ()
 
-class OCNetworking: NSObject {
+internal class OCNetworking: NSObject {
     static let sharedInstance = OCNetworking()
     
     func baseURL() -> String {

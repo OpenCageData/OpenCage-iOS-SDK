@@ -13,7 +13,7 @@ import UIKit
  */
 class OCSDK: NSObject {
     
-    private var apiKeyString :String = ""
+    internal var apiKeyString :String = ""
     
     /**
      Convenience Initialiser
@@ -36,6 +36,13 @@ class OCSDK: NSObject {
         OCNetworking.sharedInstance.reverseGeocode(latitude: latitude, longitude: longitude, withAnnotations: withAnnotations, apiKey: apiKeyString, completionBlock: completionBlock)
     }
     
+    /**
+     A function that provides a wrapper for the OpenCage Forward Geocoding API.
+     
+     - Parameter address: A String. The address of the location. This is required
+     - Parameter withAnnotations: A Bool sent as to whether you want annotations returned as well. This is required
+     - Parameter completionBlock: A block which returns the response from the API. This is required.
+     */
     public func forwardGeocode(address :String, withAnnotations :Bool, completionBlock :@escaping ForwardGeocoderCompletionBlock) {
         OCNetworking.sharedInstance.forwardGeocode(address: address, withAnnotations: withAnnotations, apiKey: apiKeyString, completionBlock: completionBlock)
     }
