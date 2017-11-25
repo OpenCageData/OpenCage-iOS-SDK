@@ -23,6 +23,8 @@
 		D535590B1FC742C1009F3E84 /* OCAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559011FC6AFB6009F3E84 /* OCAnnotation.swift */; };
 		D535590C1FC742C3009F3E84 /* OCLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559031FC6B466009F3E84 /* OCLocation.swift */; };
 		D535590D1FC742C5009F3E84 /* OCLocationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53559071FC73AF4009F3E84 /* OCLocationResponse.swift */; };
+		D53ABB441FCA0C27008E0904 /* OCComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53ABB431FCA0C27008E0904 /* OCComponent.swift */; };
+		D53ABB451FCA1F84008E0904 /* OCComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53ABB431FCA0C27008E0904 /* OCComponent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,7 @@
 		D53559031FC6B466009F3E84 /* OCLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCLocation.swift; sourceTree = "<group>"; };
 		D53559051FC73AE9009F3E84 /* OCAddressResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCAddressResponse.swift; sourceTree = "<group>"; };
 		D53559071FC73AF4009F3E84 /* OCLocationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCLocationResponse.swift; sourceTree = "<group>"; };
+		D53ABB431FCA0C27008E0904 /* OCComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCComponent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,7 @@
 				D53559051FC73AE9009F3E84 /* OCAddressResponse.swift */,
 				D53558FF1FC6AF7E009F3E84 /* OCAddress.swift */,
 				D53559011FC6AFB6009F3E84 /* OCAnnotation.swift */,
+				D53ABB431FCA0C27008E0904 /* OCComponent.swift */,
 				D53559071FC73AF4009F3E84 /* OCLocationResponse.swift */,
 				D53559031FC6B466009F3E84 /* OCLocation.swift */,
 				D53558DC1FC45982009F3E84 /* Info.plist */,
@@ -222,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53559001FC6AF7E009F3E84 /* OCAddress.swift in Sources */,
+				D53ABB441FCA0C27008E0904 /* OCComponent.swift in Sources */,
 				D53558F51FC459A8009F3E84 /* OCSDK.swift in Sources */,
 				D53559041FC6B466009F3E84 /* OCLocation.swift in Sources */,
 				D53559021FC6AFB6009F3E84 /* OCAnnotation.swift in Sources */,
@@ -240,6 +245,7 @@
 				D535590C1FC742C3009F3E84 /* OCLocation.swift in Sources */,
 				D535590B1FC742C1009F3E84 /* OCAnnotation.swift in Sources */,
 				D53558FE1FC6A93E009F3E84 /* OCNetworking.swift in Sources */,
+				D53ABB451FCA1F84008E0904 /* OCComponent.swift in Sources */,
 				D535590D1FC742C5009F3E84 /* OCLocationResponse.swift in Sources */,
 				D53558E71FC45982009F3E84 /* OpenCageTests.swift in Sources */,
 				D535590A1FC742BE009F3E84 /* OCAddress.swift in Sources */,
