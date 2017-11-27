@@ -121,7 +121,7 @@ internal class OCNetworking: NSObject {
     }
     
     func escapeCharacters(_ string :String) -> String {
-        let customAllowedSet =  CharacterSet(charactersIn:"\"#%/<>?@\\^`{|}+").inverted
+        let customAllowedSet =  CharacterSet(charactersIn:"\"#%/<>?@\\^`{|}+, ").inverted
         let escapedString = string.addingPercentEncoding(withAllowedCharacters: customAllowedSet)
         
         return escapedString! as String

@@ -39,7 +39,7 @@ class OpenCageTests: XCTestCase {
         let expectation = self.expectation(description: "fetch forward geocode")
         
         let ocSDK :OCSDK = OCSDK(apiKey: "8d1f8b2d151b48358af5976447717687")
-        ocSDK.forwardGeocode(address: "", withAnnotations: true) { (response, success, error) in
+        ocSDK.forwardGeocode(address: "3 Walls Court, Tewkesbury, England", withAnnotations: true) { (response, success, error) in
             if success {
                 if response.remainingLimit != nil { // Only Free Accounts have the rate limit
                     XCTAssert(true, "Pass")
@@ -52,7 +52,19 @@ class OpenCageTests: XCTestCase {
     }
 
     func testForwardGeocoderPaid() {
+        let expectation = self.expectation(description: "fetch forward geocode")
         
+        let ocSDK :OCSDK = OCSDK(apiKey: "cce72e47b0e14a8abcdf9d80f419d13b")
+        ocSDK.forwardGeocode(address: "3 Walls Court, Tewkesbury, England", withAnnotations: true) { (response, success, error) in
+            if success {
+                if response.remainingLimit != nil { // Only Free Accounts have the rate limit
+                    XCTAssert(true, "Pass")
+                    expectation.fulfill()
+                }
+            }
+        }
+        
+        self.waitForExpectations(timeout: 10.0, handler: nil)
     }
     
     func testRevereGeocoderPaid() {
@@ -69,10 +81,6 @@ class OpenCageTests: XCTestCase {
         }
         
         self.waitForExpectations(timeout: 10.0, handler: nil)
-    }
-    
-    func testGeocoderErrors() {
-        
     }
     
     func testMultiThreading() {
