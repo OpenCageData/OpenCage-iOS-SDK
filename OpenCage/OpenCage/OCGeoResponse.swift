@@ -1,15 +1,15 @@
 //
-//  OCAddressResponse.swift
+//  OCGeoResponse.swift
 //  OpenCage
 //
-//  Created by Emu on 23/11/2017.
+//  Created by Emu on 26/11/2017.
 //  Copyright © 2017 OpenCage. All rights reserved.
 //
 
 import UIKit
 
-class OCAddressResponse: NSObject {
-    var ocAddress :[OCAddress] = []
+class OCGeoResponse: NSObject {
+    var locations :[OCGeoObject] = []
     var licenses :NSArray = NSArray()
     var timestamp :NSDictionary = NSDictionary()
     var stayInformed :NSDictionary = NSDictionary()
@@ -18,14 +18,14 @@ class OCAddressResponse: NSObject {
     var thanksString :String = ""
     
     var remainingLimit :Int?
-    
+
     func setupWithData(dictionary :NSDictionary) {
         if let array :NSArray = dictionary.object(forKey: "results") as? NSArray {
             for object in array {
                 let dict = object as! NSDictionary
-                let address = OCAddress()
-                address.setupWithData(dictionary: dict)
-                ocAddress.append(address)
+                let location = OCGeoObject()
+                location.setupWithData(dictionary: dict)
+                locations.append(location)
             }
         }
         

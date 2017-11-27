@@ -1,8 +1,8 @@
 //
-//  OCAddress.swift
+//  OCGeoObject.swift
 //  OpenCage
 //
-//  Created by Emu on 23/11/2017.
+//  Created by Emu on 26/11/2017.
 //  Copyright © 2017 OpenCage. All rights reserved.
 //
 
@@ -15,8 +15,20 @@ class OCBounds: NSObject {
     var southwestLongitude :NSNumber!
 }
 
-class OCAddress: NSObject {
+class OCComponent: NSObject {
     
+    var type :String = ""
+    var city :String = ""
+    var country :String = ""
+    var countryCode :String = ""
+    var postcode :String = ""
+    var road :String = ""
+    var state :String = ""
+    var stateDistrict :String = ""
+    var iso3166Code :String = ""
+}
+
+class OCGeoObject: NSObject {
     var confidence :Int = 0
     var formattedAddress :String = ""
     var latitude :NSNumber!

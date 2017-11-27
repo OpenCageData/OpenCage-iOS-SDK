@@ -9,8 +9,8 @@
 import UIKit
 
 typealias AsyncCompletionBlock  = (_ resultDictionary: NSDictionary, _ success: Bool, _ error: NSError?) -> ()
-typealias ReverseGeocoderCompletionBlock  = (_ addressArray :OCAddressResponse, _ success: Bool, _ error: NSError?) -> ()
-typealias ForwardGeocoderCompletionBlock  = (_ locationArray :OCLocationResponse, _ success: Bool, _ error: NSError?) -> ()
+typealias ReverseGeocoderCompletionBlock  = (_ addressArray :OCGeoResponse, _ success: Bool, _ error: NSError?) -> ()
+typealias ForwardGeocoderCompletionBlock  = (_ locationArray :OCGeoResponse, _ success: Bool, _ error: NSError?) -> ()
 
 internal class OCNetworking: NSObject {
     static let sharedInstance = OCNetworking()
@@ -29,7 +29,7 @@ internal class OCNetworking: NSObject {
         
         let url :URL = URL(string: urlString)!
         downloadDataFromURL(url) { (dict, success, error) in
-            let ocResponse :OCAddressResponse = OCAddressResponse()
+            let ocResponse :OCGeoResponse = OCGeoResponse()
             var error :NSError? = error
             var hasSucceeded = success
             
@@ -59,7 +59,7 @@ internal class OCNetworking: NSObject {
         
         let url :URL = URL(string: urlString)!
         downloadDataFromURL(url) { (dict, success, error) in
-            let ocResponse :OCLocationResponse = OCLocationResponse()
+            let ocResponse :OCGeoResponse = OCGeoResponse()
             
             if success {
                 ocResponse.setupWithData(dictionary: dict)
