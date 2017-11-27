@@ -18,6 +18,7 @@
 		D53ABB471FCAA59E008E0904 /* OCGeoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53ABB461FCAA59E008E0904 /* OCGeoResponse.swift */; };
 		D53ABB491FCAA621008E0904 /* OCGeoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53ABB461FCAA59E008E0904 /* OCGeoResponse.swift */; };
 		D53ABB4C1FCAA649008E0904 /* OCGeoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53ABB4B1FCAA649008E0904 /* OCGeoObject.swift */; };
+		D53ABB4D1FCBF7AD008E0904 /* OCGeoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53ABB4B1FCAA649008E0904 /* OCGeoObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -236,6 +237,7 @@
 				D53ABB491FCAA621008E0904 /* OCGeoResponse.swift in Sources */,
 				D535590B1FC742C1009F3E84 /* OCAnnotation.swift in Sources */,
 				D53558FE1FC6A93E009F3E84 /* OCNetworking.swift in Sources */,
+				D53ABB4D1FCBF7AD008E0904 /* OCGeoObject.swift in Sources */,
 				D53558E71FC45982009F3E84 /* OpenCageTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

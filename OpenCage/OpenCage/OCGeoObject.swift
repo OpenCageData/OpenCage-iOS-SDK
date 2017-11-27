@@ -39,13 +39,10 @@ class OCGeoObject: NSObject {
     var annotations :[OCAnnotation] = []
     
     func setupWithData(dictionary :NSDictionary) {
-        if let annotationsArray :NSArray = dictionary.object(forKey: "annotations") as? NSArray {
-            for object in annotationsArray {
-                let dict :NSDictionary = object as! NSDictionary
-                let annotation :OCAnnotation = OCAnnotation()
-                annotation.setupWithData(dictionary: dict)
-                annotations.append(annotation)
-            }
+        if let annotationsDict :NSDictionary = dictionary.object(forKey: "annotations") as? NSDictionary {
+            let annotation :OCAnnotation = OCAnnotation()
+            annotation.setupWithData(dictionary: annotationsDict)
+            annotations.append(annotation)
         }
         
         if let formattedString :String = dictionary.object(forKey: "formatted") as? String {

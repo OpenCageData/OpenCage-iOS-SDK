@@ -53,30 +53,10 @@ class OCAnnotation: NSObject {
     var callingCode :Int!
     var currency :OCCurrency!
     var geoHash :String!
-    var qibla :String!
+    var qibla :NSNumber!
     var timezone :OCTimeZone!
     var sunTimes :OCSunTimes!
     var what3Words :String!
-    
-    
-    /*
- annotations": {
-     "sun": {
-         "rise": {
-             "apparent": 1511422320,
-             "astronomical": 1511415120,
-             "civil": 1511420040,
-             "nautical": 1511417520
-         },
-         "set": {
-             "apparent": 1511452800,
-             "astronomical": 1511459940,
-             "civil": 1511455080,
-             "nautical": 1511457600
-         }
-     },
- },
-     */
     
     func setupWithData(dictionary :NSDictionary) {
         if let mgrsString :String = dictionary.object(forKey: "MGRS") as? String {
@@ -91,15 +71,15 @@ class OCAnnotation: NSObject {
             geoHash = geoString
         }
         
-        if let qiblaString :String = dictionary.object(forKey: "qibla") as? String {
-            qibla = qiblaString
+        if let qiblaDouble :Double = dictionary.object(forKey: "qibla") as? Double {
+            qibla = NSNumber(value: qiblaDouble)
         }
         
         if let callCodeString :Int = dictionary.object(forKey: "callingcode") as? Int {
             callingCode = callCodeString
         }
         
-        if let DMSDict :NSDictionary = dictionary.object(forKey: "geometry") as? NSDictionary {
+        if let DMSDict :NSDictionary = dictionary.object(forKey: "DMS") as? NSDictionary {
             DMSDictionary = DMSDict
         }
         
@@ -176,8 +156,8 @@ class OCAnnotation: NSObject {
                 currency.isoNumeric = isoNumeric
             }
             
-            if let isoNumeric :Int = currencyDict.object(forKey: "iso_numeric") as? Int {
-                currency.isoNumeric = isoNumeric
+            if let smallestDenomination :Int = currencyDict.object(forKey: "smallest_denomination") as? Int {
+                currency.smallestDenomination = NSNumber(value: smallestDenomination)
             }
             
             if let symbolFirst :Bool = currencyDict.object(forKey: "symbol_first") as? Bool {
