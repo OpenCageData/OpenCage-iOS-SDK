@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
   s.name             = 'OpenCageSDK'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of OpenCageSDK.'
+  s.summary          = 'OpenCageSDK is the SDK for Open Cage Geocoding API'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,18 +17,16 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'This is written to help the users of the OpenCage API system for Geocoding within iOS'
 
-  s.homepage         = 'https://github.com/franny2491/OpenCageSDK'
+  s.homepage         = 'https://geocoder.opencagedata.com/'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'franny2491' => 'fbeasleysoftware@gmail.com' }
-  s.source           = { :git => 'https://github.com/franny2491/OpenCageSDK.git', :tag => s.version.to_s }
+  s.author           = { 'OpenCage' => 'edf@opencagedata.com' }
+  s.source           = { :git => 'https://github.com/OpenCageData/OpenCage-iOS-SDK.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
 
   s.source_files = 'OpenCageSDK/Classes/**/*'
   
