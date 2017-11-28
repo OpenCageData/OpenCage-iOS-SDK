@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		083ED058AD42FCDD53A01E78CFEF5FEC /* OpenCageSDK-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1533D7DFD8DB316D4AC28029BC07F1BA /* OpenCageSDK-dummy.m */; };
+		258F8560115871A08A6FD0CCB4355BCC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		275B9CC6445EE2A397A98B5F7A9ECC94 /* OCGeoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A36F406D6398052F4E841498A7F7FA4 /* OCGeoResponse.swift */; };
+		63259ED9C8FC47FD03389E39EF1AC820 /* Pods-OpenCageSDK_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 614043812EDA0EA3C9433DA95ECA7FF6 /* Pods-OpenCageSDK_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		87C41A153338B46398E498A0EFC1F87A /* OCAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 406640D512E200CA2FC306AE47BCBDED /* OCAnnotation.swift */; };
+		8AEE99A91B76CE8B232E3D809CC17DE3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		99F9432C93E6B82B7CE36F098A19A3A1 /* OpenCageSDK-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FDD72BE3E55705D5F72DFD253093A9B3 /* OpenCageSDK-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6B9479EE2A0600747E8D71E00B39E2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DB4CCCD487D2AE3F1130C9A3DE64F927 /* Pods-OpenCageSDK_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 846AC78E0B721C6B3FD9565616143E8A /* Pods-OpenCageSDK_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB8FF3DB19A6EB5A7B1F82296375BC1B /* Pods-OpenCageSDK_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B4569D41253F66CA5A61C234D57E4C6C /* Pods-OpenCageSDK_Example-dummy.m */; };
+		EF973BB88D9D988EC606AC5473AF0546 /* Pods-OpenCageSDK_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAD2D816982D713132AFA8F4B3F5CCF /* Pods-OpenCageSDK_Tests-dummy.m */; };
+		F0B2587A4D4DB65D4A7F6C0747130087 /* OCGeoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CD9C285E46379567BD804DE269465C /* OCGeoObject.swift */; };
+		F564E3CFDC9FCEBDD0B1D4978B68621A /* OCSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614523E4061335774C3D06EBE5A75DF2 /* OCSDK.swift */; };
+		F72F0702CD88EA955C494C5760FDD174 /* OCNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A055E780DA12F9FE27016F7AA5C0E2D /* OCNetworking.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		488A0DA27F6DC4BAD0E787B73D8A5A30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E99324B4881EF0008B8C97854BF46F16;
+			remoteInfo = OpenCageSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		037E1E3D8815BBD60F2FF7B681FEEA64 /* Pods-OpenCageSDK_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OpenCageSDK_Tests.modulemap"; sourceTree = "<group>"; };
+		0A36F406D6398052F4E841498A7F7FA4 /* OCGeoResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OCGeoResponse.swift; path = OpenCageSDK/Classes/OCGeoResponse.swift; sourceTree = "<group>"; };
+		0DB064416DC809A52BFF3D5C6FD58DF3 /* Pods_OpenCageSDK_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OpenCageSDK_Example.framework; path = "Pods-OpenCageSDK_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1533D7DFD8DB316D4AC28029BC07F1BA /* OpenCageSDK-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenCageSDK-dummy.m"; sourceTree = "<group>"; };
+		27CA5B78644C6381A79AD125A355AFBF /* Pods_OpenCageSDK_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_OpenCageSDK_Tests.framework; path = "Pods-OpenCageSDK_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2817BC34960092DCDAEA024AB84836FD /* Pods-OpenCageSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenCageSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
+		29CD9C285E46379567BD804DE269465C /* OCGeoObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OCGeoObject.swift; path = OpenCageSDK/Classes/OCGeoObject.swift; sourceTree = "<group>"; };
+		2DB7AC0E16E40F765506A632E66CDB51 /* Pods-OpenCageSDK_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenCageSDK_Example-resources.sh"; sourceTree = "<group>"; };
+		2FCCB2935F1D9275C241D6421B8A96D5 /* Pods-OpenCageSDK_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenCageSDK_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		33F3EBD71A2A414447A2A1D64DF30D59 /* OpenCageSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = OpenCageSDK.framework; path = OpenCageSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38E3057C7AB63E8E69BE2CB5A9E1B237 /* Pods-OpenCageSDK_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenCageSDK_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		406640D512E200CA2FC306AE47BCBDED /* OCAnnotation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OCAnnotation.swift; path = OpenCageSDK/Classes/OCAnnotation.swift; sourceTree = "<group>"; };
+		5081CD3B03A278A39D8FD715BEC241A1 /* Pods-OpenCageSDK_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenCageSDK_Tests-resources.sh"; sourceTree = "<group>"; };
+		5CB6D348B3312246F76A21D7F67BD9D7 /* OpenCageSDK-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenCageSDK-prefix.pch"; sourceTree = "<group>"; };
+		614043812EDA0EA3C9433DA95ECA7FF6 /* Pods-OpenCageSDK_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenCageSDK_Example-umbrella.h"; sourceTree = "<group>"; };
+		614523E4061335774C3D06EBE5A75DF2 /* OCSDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OCSDK.swift; path = OpenCageSDK/Classes/OCSDK.swift; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6EECECC4E2D560B9D5A541195E7B521E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7B516AB767BB73804E48A575F42A6109 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C1A7FD31893E389513D9A60F177A67B /* Pods-OpenCageSDK_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-OpenCageSDK_Example.modulemap"; sourceTree = "<group>"; };
+		846AC78E0B721C6B3FD9565616143E8A /* Pods-OpenCageSDK_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-OpenCageSDK_Tests-umbrella.h"; sourceTree = "<group>"; };
+		8A055E780DA12F9FE27016F7AA5C0E2D /* OCNetworking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OCNetworking.swift; path = OpenCageSDK/Classes/OCNetworking.swift; sourceTree = "<group>"; };
+		8A51082B5A0035FFC1E6807600EB56FB /* Pods-OpenCageSDK_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenCageSDK_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		903FB134A4735DAFDCBA832862AF3EE3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9BAD2D816982D713132AFA8F4B3F5CCF /* Pods-OpenCageSDK_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenCageSDK_Tests-dummy.m"; sourceTree = "<group>"; };
+		9CAD3E9A8DE5839E13C49F83B7604F00 /* Pods-OpenCageSDK_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-OpenCageSDK_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9ED82387144061964B462D47D1506521 /* OpenCageSDK.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OpenCageSDK.modulemap; sourceTree = "<group>"; };
+		A54CEB1D1B958BEFF4CA63167619DE0F /* Pods-OpenCageSDK_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenCageSDK_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B4569D41253F66CA5A61C234D57E4C6C /* Pods-OpenCageSDK_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-OpenCageSDK_Example-dummy.m"; sourceTree = "<group>"; };
+		C7532E208031EFD4B7AB910B85C879E3 /* Pods-OpenCageSDK_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-OpenCageSDK_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		CC3BEA8BBB3838814C5711475712DC41 /* Pods-OpenCageSDK_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenCageSDK_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E06166670896B29508B87A3614EF6AF9 /* Pods-OpenCageSDK_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-OpenCageSDK_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		E6CFB289A83C8DA8049405B48D577367 /* Pods-OpenCageSDK_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-OpenCageSDK_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EDE1F2D5C43836D0739F494F37F2401E /* OpenCageSDK.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenCageSDK.xcconfig; sourceTree = "<group>"; };
+		FDD72BE3E55705D5F72DFD253093A9B3 /* OpenCageSDK-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenCageSDK-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		40D9685FA90A084C113C594EB38CAD08 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				258F8560115871A08A6FD0CCB4355BCC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F1300B2A47E337CB12E6EAB386B1BFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6B9479EE2A0600747E8D71E00B39E2E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1F02E5EC6CFCBB7F1A3C53733360640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AEE99A91B76CE8B232E3D809CC17DE3 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08C5C18B128B1C93C9679055677302DD /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31D85433D3286D99B35C80C1CDD10DD0 /* OpenCageSDK */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		15488B434834EFC0AC69B3DC3056E3B8 /* Pods-OpenCageSDK_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				7B516AB767BB73804E48A575F42A6109 /* Info.plist */,
+				037E1E3D8815BBD60F2FF7B681FEEA64 /* Pods-OpenCageSDK_Tests.modulemap */,
+				9CAD3E9A8DE5839E13C49F83B7604F00 /* Pods-OpenCageSDK_Tests-acknowledgements.markdown */,
+				E6CFB289A83C8DA8049405B48D577367 /* Pods-OpenCageSDK_Tests-acknowledgements.plist */,
+				9BAD2D816982D713132AFA8F4B3F5CCF /* Pods-OpenCageSDK_Tests-dummy.m */,
+				E06166670896B29508B87A3614EF6AF9 /* Pods-OpenCageSDK_Tests-frameworks.sh */,
+				5081CD3B03A278A39D8FD715BEC241A1 /* Pods-OpenCageSDK_Tests-resources.sh */,
+				846AC78E0B721C6B3FD9565616143E8A /* Pods-OpenCageSDK_Tests-umbrella.h */,
+				2FCCB2935F1D9275C241D6421B8A96D5 /* Pods-OpenCageSDK_Tests.debug.xcconfig */,
+				A54CEB1D1B958BEFF4CA63167619DE0F /* Pods-OpenCageSDK_Tests.release.xcconfig */,
+			);
+			name = "Pods-OpenCageSDK_Tests";
+			path = "Target Support Files/Pods-OpenCageSDK_Tests";
+			sourceTree = "<group>";
+		};
+		31D85433D3286D99B35C80C1CDD10DD0 /* OpenCageSDK */ = {
+			isa = PBXGroup;
+			children = (
+				406640D512E200CA2FC306AE47BCBDED /* OCAnnotation.swift */,
+				29CD9C285E46379567BD804DE269465C /* OCGeoObject.swift */,
+				0A36F406D6398052F4E841498A7F7FA4 /* OCGeoResponse.swift */,
+				8A055E780DA12F9FE27016F7AA5C0E2D /* OCNetworking.swift */,
+				614523E4061335774C3D06EBE5A75DF2 /* OCSDK.swift */,
+				9BABA32CE5E50892584464F1638A12C4 /* Support Files */,
+			);
+			name = OpenCageSDK;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				08C5C18B128B1C93C9679055677302DD /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				D9AD21C39763873B22935EEEDFAD9124 /* Products */,
+				B9EA9A8FD8AE92E15B5D6958978829AB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		9BABA32CE5E50892584464F1638A12C4 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				903FB134A4735DAFDCBA832862AF3EE3 /* Info.plist */,
+				9ED82387144061964B462D47D1506521 /* OpenCageSDK.modulemap */,
+				EDE1F2D5C43836D0739F494F37F2401E /* OpenCageSDK.xcconfig */,
+				1533D7DFD8DB316D4AC28029BC07F1BA /* OpenCageSDK-dummy.m */,
+				5CB6D348B3312246F76A21D7F67BD9D7 /* OpenCageSDK-prefix.pch */,
+				FDD72BE3E55705D5F72DFD253093A9B3 /* OpenCageSDK-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/OpenCageSDK";
+			sourceTree = "<group>";
+		};
+		B9EA9A8FD8AE92E15B5D6958978829AB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA5799784BE5EA4BE184FF1AFCB67543 /* Pods-OpenCageSDK_Example */,
+				15488B434834EFC0AC69B3DC3056E3B8 /* Pods-OpenCageSDK_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BA5799784BE5EA4BE184FF1AFCB67543 /* Pods-OpenCageSDK_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6EECECC4E2D560B9D5A541195E7B521E /* Info.plist */,
+				7C1A7FD31893E389513D9A60F177A67B /* Pods-OpenCageSDK_Example.modulemap */,
+				8A51082B5A0035FFC1E6807600EB56FB /* Pods-OpenCageSDK_Example-acknowledgements.markdown */,
+				38E3057C7AB63E8E69BE2CB5A9E1B237 /* Pods-OpenCageSDK_Example-acknowledgements.plist */,
+				B4569D41253F66CA5A61C234D57E4C6C /* Pods-OpenCageSDK_Example-dummy.m */,
+				CC3BEA8BBB3838814C5711475712DC41 /* Pods-OpenCageSDK_Example-frameworks.sh */,
+				2DB7AC0E16E40F765506A632E66CDB51 /* Pods-OpenCageSDK_Example-resources.sh */,
+				614043812EDA0EA3C9433DA95ECA7FF6 /* Pods-OpenCageSDK_Example-umbrella.h */,
+				C7532E208031EFD4B7AB910B85C879E3 /* Pods-OpenCageSDK_Example.debug.xcconfig */,
+				2817BC34960092DCDAEA024AB84836FD /* Pods-OpenCageSDK_Example.release.xcconfig */,
+			);
+			name = "Pods-OpenCageSDK_Example";
+			path = "Target Support Files/Pods-OpenCageSDK_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D9AD21C39763873B22935EEEDFAD9124 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				33F3EBD71A2A414447A2A1D64DF30D59 /* OpenCageSDK.framework */,
+				0DB064416DC809A52BFF3D5C6FD58DF3 /* Pods_OpenCageSDK_Example.framework */,
+				27CA5B78644C6381A79AD125A355AFBF /* Pods_OpenCageSDK_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		13840C4672AA8F9F04A1049685DD7278 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63259ED9C8FC47FD03389E39EF1AC820 /* Pods-OpenCageSDK_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		652EB24FE532D4AB8F39470AF9469F76 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99F9432C93E6B82B7CE36F098A19A3A1 /* OpenCageSDK-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6B56DE1965439ABC9CDB22F20A7585F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB4CCCD487D2AE3F1130C9A3DE64F927 /* Pods-OpenCageSDK_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3ECF127CCF6FA46B84B5DAFFC3AAFC0D /* Pods-OpenCageSDK_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E15DDB01888581FCA5C84CAFAFB60A15 /* Build configuration list for PBXNativeTarget "Pods-OpenCageSDK_Example" */;
+			buildPhases = (
+				41478B5038FE26BBBBF2939509BD582D /* Sources */,
+				40D9685FA90A084C113C594EB38CAD08 /* Frameworks */,
+				13840C4672AA8F9F04A1049685DD7278 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				084C8A4A0AA0969ADE333BA4F2DA1523 /* PBXTargetDependency */,
+			);
+			name = "Pods-OpenCageSDK_Example";
+			productName = "Pods-OpenCageSDK_Example";
+			productReference = 0DB064416DC809A52BFF3D5C6FD58DF3 /* Pods_OpenCageSDK_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		602AD59C07C6B6BE30303D10C1FEE247 /* Pods-OpenCageSDK_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F019A6565A9C192F06772CBBA1065A0D /* Build configuration list for PBXNativeTarget "Pods-OpenCageSDK_Tests" */;
+			buildPhases = (
+				4F91B9006E590F875757547B8CBA3197 /* Sources */,
+				D1F02E5EC6CFCBB7F1A3C53733360640 /* Frameworks */,
+				D6B56DE1965439ABC9CDB22F20A7585F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-OpenCageSDK_Tests";
+			productName = "Pods-OpenCageSDK_Tests";
+			productReference = 27CA5B78644C6381A79AD125A355AFBF /* Pods_OpenCageSDK_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E99324B4881EF0008B8C97854BF46F16 /* OpenCageSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C917B37469B99DB8A485AFE2BD42A951 /* Build configuration list for PBXNativeTarget "OpenCageSDK" */;
+			buildPhases = (
+				4D262D17896274BB0066BA194211ADD7 /* Sources */,
+				8F1300B2A47E337CB12E6EAB386B1BFC /* Frameworks */,
+				652EB24FE532D4AB8F39470AF9469F76 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenCageSDK;
+			productName = OpenCageSDK;
+			productReference = 33F3EBD71A2A414447A2A1D64DF30D59 /* OpenCageSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = D9AD21C39763873B22935EEEDFAD9124 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E99324B4881EF0008B8C97854BF46F16 /* OpenCageSDK */,
+				3ECF127CCF6FA46B84B5DAFFC3AAFC0D /* Pods-OpenCageSDK_Example */,
+				602AD59C07C6B6BE30303D10C1FEE247 /* Pods-OpenCageSDK_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41478B5038FE26BBBBF2939509BD582D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EB8FF3DB19A6EB5A7B1F82296375BC1B /* Pods-OpenCageSDK_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D262D17896274BB0066BA194211ADD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87C41A153338B46398E498A0EFC1F87A /* OCAnnotation.swift in Sources */,
+				F0B2587A4D4DB65D4A7F6C0747130087 /* OCGeoObject.swift in Sources */,
+				275B9CC6445EE2A397A98B5F7A9ECC94 /* OCGeoResponse.swift in Sources */,
+				F72F0702CD88EA955C494C5760FDD174 /* OCNetworking.swift in Sources */,
+				F564E3CFDC9FCEBDD0B1D4978B68621A /* OCSDK.swift in Sources */,
+				083ED058AD42FCDD53A01E78CFEF5FEC /* OpenCageSDK-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F91B9006E590F875757547B8CBA3197 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF973BB88D9D988EC606AC5473AF0546 /* Pods-OpenCageSDK_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		084C8A4A0AA0969ADE333BA4F2DA1523 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenCageSDK;
+			target = E99324B4881EF0008B8C97854BF46F16 /* OpenCageSDK */;
+			targetProxy = 488A0DA27F6DC4BAD0E787B73D8A5A30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1389F79E108F80436DF4E65FD1BEFFF0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE1F2D5C43836D0739F494F37F2401E /* OpenCageSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OpenCageSDK/OpenCageSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenCageSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpenCageSDK/OpenCageSDK.modulemap";
+				PRODUCT_NAME = OpenCageSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5E5F62CB18A38721FE32A81A2362508A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7532E208031EFD4B7AB910B85C879E3 /* Pods-OpenCageSDK_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenCageSDK_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenCageSDK_Example/Pods-OpenCageSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenCageSDK_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		731DC216E1A58545B559F6E0A2418060 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		AEDC46A809AD41F4C55E20900D042D71 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54CEB1D1B958BEFF4CA63167619DE0F /* Pods-OpenCageSDK_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenCageSDK_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenCageSDK_Tests/Pods-OpenCageSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenCageSDK_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D08564046A882FE960F1D07D498EDA3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2817BC34960092DCDAEA024AB84836FD /* Pods-OpenCageSDK_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenCageSDK_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenCageSDK_Example/Pods-OpenCageSDK_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenCageSDK_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D2D0F481FE0B64A53F8378C96F5D9960 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FCCB2935F1D9275C241D6421B8A96D5 /* Pods-OpenCageSDK_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-OpenCageSDK_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-OpenCageSDK_Tests/Pods-OpenCageSDK_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_OpenCageSDK_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F04B7DD41207B2037D65ACBB64CC5947 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDE1F2D5C43836D0739F494F37F2401E /* OpenCageSDK.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/OpenCageSDK/OpenCageSDK-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenCageSDK/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpenCageSDK/OpenCageSDK.modulemap";
+				PRODUCT_NAME = OpenCageSDK;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33DA7F43A1D2FA3C74A8C8FC246E1FA6 /* Debug */,
+				731DC216E1A58545B559F6E0A2418060 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C917B37469B99DB8A485AFE2BD42A951 /* Build configuration list for PBXNativeTarget "OpenCageSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F04B7DD41207B2037D65ACBB64CC5947 /* Debug */,
+				1389F79E108F80436DF4E65FD1BEFFF0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E15DDB01888581FCA5C84CAFAFB60A15 /* Build configuration list for PBXNativeTarget "Pods-OpenCageSDK_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E5F62CB18A38721FE32A81A2362508A /* Debug */,
+				D08564046A882FE960F1D07D498EDA3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F019A6565A9C192F06772CBBA1065A0D /* Build configuration list for PBXNativeTarget "Pods-OpenCageSDK_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D2D0F481FE0B64A53F8378C96F5D9960 /* Debug */,
+				AEDC46A809AD41F4C55E20900D042D71 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

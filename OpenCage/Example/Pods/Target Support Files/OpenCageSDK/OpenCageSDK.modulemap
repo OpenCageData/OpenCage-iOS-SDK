@@ -1,0 +1,6 @@
+framework module OpenCageSDK {
+  umbrella header "OpenCageSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

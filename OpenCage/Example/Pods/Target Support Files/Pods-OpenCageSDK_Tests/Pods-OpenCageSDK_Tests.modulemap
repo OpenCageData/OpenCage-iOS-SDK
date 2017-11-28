@@ -1,0 +1,6 @@
+framework module Pods_OpenCageSDK_Tests {
+  umbrella header "Pods-OpenCageSDK_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

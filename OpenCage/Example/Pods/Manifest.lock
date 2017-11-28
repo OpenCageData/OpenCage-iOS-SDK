@@ -1,0 +1,16 @@
+PODS:
+  - OpenCageSDK (0.1.0)
+
+DEPENDENCIES:
+  - OpenCageSDK (from `../`)
+
+EXTERNAL SOURCES:
+  OpenCageSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  OpenCageSDK: b5d348ed87657e37b37a544fdd6d306df18a3a98
+
+PODFILE CHECKSUM: dd6b86af884d71df5158f06d0197a24964fae45f
+
+COCOAPODS: 1.3.1

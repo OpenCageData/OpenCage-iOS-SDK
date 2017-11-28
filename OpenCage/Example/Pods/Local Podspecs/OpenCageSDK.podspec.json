@@ -1,0 +1,22 @@
+{
+  "name": "OpenCageSDK",
+  "version": "0.1.0",
+  "summary": "A short description of OpenCageSDK.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/franny2491/OpenCageSDK",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "franny2491": "fbeasleysoftware@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/franny2491/OpenCageSDK.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "OpenCageSDK/Classes/**/*"
+}

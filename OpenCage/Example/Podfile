@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'OpenCageSDK_Example' do
+  pod 'OpenCageSDK', :path => '../'
+
+  target 'OpenCageSDK_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
