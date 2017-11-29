@@ -20,7 +20,7 @@ public class OCSDK: NSObject {
      
      - Parameter apiKey: Your API Key as provided from the OpenCage Website. This is required.
      */
-    public init(apiKey: String) {
+    @objc public init(apiKey: String) {
         apiKeyString = apiKey
     }
     
@@ -32,7 +32,7 @@ public class OCSDK: NSObject {
      - Parameter withAnnotations: A Bool sent as to whether you want annotations returned as well. This is required
      - Parameter completionBlock: A block which returns the response from the API. This is required.
      */
-    public func reverseGeocode(latitude :NSNumber, longitude :NSNumber, withAnnotations :Bool, completionBlock :@escaping ReverseGeocoderCompletionBlock) {
+    @objc public func reverseGeocode(latitude :NSNumber, longitude :NSNumber, withAnnotations :Bool, completionBlock :@escaping ReverseGeocoderCompletionBlock) {
         OCNetworking.sharedInstance.reverseGeocode(latitude: latitude, longitude: longitude, withAnnotations: withAnnotations, apiKey: apiKeyString, completionBlock: completionBlock)
     }
     
@@ -43,7 +43,7 @@ public class OCSDK: NSObject {
      - Parameter withAnnotations: A Bool sent as to whether you want annotations returned as well. This is required
      - Parameter completionBlock: A block which returns the response from the API. This is required.
      */
-    public func forwardGeocode(address :String, withAnnotations :Bool, completionBlock :@escaping ForwardGeocoderCompletionBlock) {
+    @objc public func forwardGeocode(address :String, withAnnotations :Bool, completionBlock :@escaping ForwardGeocoderCompletionBlock) {
         OCNetworking.sharedInstance.forwardGeocode(address: address, withAnnotations: withAnnotations, apiKey: apiKeyString, completionBlock: completionBlock)
     }
 }
