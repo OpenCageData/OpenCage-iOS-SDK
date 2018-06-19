@@ -8,7 +8,7 @@
 
 You will need the latest developer tools in order to build `OpenCageSDK`. Old Xcode versions might work, but compatibility will not be explicitly maintained.
 
-You will also need an API key from OpenCage to initialise this SDK. The API key is retrieved from here: https://geocoder.opencagedata.com/
+You will also need an API key from OpenCage to initialise this SDK. The API key is retrieved from here: https://opencagedata.com
 
 ## Adding OpenCageSDK to your project
 
